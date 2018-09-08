@@ -4,7 +4,7 @@ import { Component, OnInit } from "@angular/core";
   selector: "terms-conditions",
   template: `
   <div class="wrapper">
-    <iframe src="assets/HTML/terms-conditions.html" frameborder="0"></iframe>
+    <iframe src="/assets/HTML/terms-conditions.html" frameborder="0"></iframe>
   </div>
   
   `,

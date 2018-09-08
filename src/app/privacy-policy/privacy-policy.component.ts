@@ -4,7 +4,7 @@ import { Component, OnInit } from "@angular/core";
   selector: "privacy-policy",
   template: `
   <div class="wrapper">
-    <iframe src="assets/HTML/privacy-policy2.html" frameborder="0"></iframe>
+    <iframe src="/assets/HTML/privacy-policy2.html" frameborder="0"></iframe>
   </div>
     
   `,

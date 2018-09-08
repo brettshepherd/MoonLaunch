@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@import ~sass/variables
+*
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    margin: 0
+    padding: 0
+    &:before,
+    &:after 
+        box-sizing: border-box
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+    &:focus
+        outline: none
+    &::selection
+        background: $accent
+        color: white
+
+html,
+body 
+    height: 100%
+    width: 100%
+    margin: 0
+    padding: 0
+    font-family: 'Ubuntu', sans-serif
+    font-weight: 400
+    line-height: 1.5rem
+    -webkit-font-smoothing: antialiased   
+    color: $dark70
+    -webkit-overflow-scrolling: touch
+    overflow: hidden
+    background-color: $light
+
+button
+    border: none
+    background: none
+    cursor: pointer
+    font-family: Ubuntu
+
+input
+    border: none
+    border-radius: 0 
+    appearance: none
+    background: none
+    font-family: inherit
+    &:-webkit-autofill 
+        -webkit-transition-delay: 99999s
+
+
+@-webkit-keyframes autofill 
+    to 
+        color: black
+        background: transparent
+
+a 
+    text-decoration: none
+    outline: 0
+    color: inherit
+    
