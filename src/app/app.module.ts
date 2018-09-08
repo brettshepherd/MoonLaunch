@@ -4,6 +4,7 @@ import { HttpClientModule, HttpClientJsonpModule } from "@angular/common/http";
 import { AppRoutingModule } from "./routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Store } from "./store";
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     HttpClientJsonpModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [Store],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
