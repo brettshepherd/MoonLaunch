@@ -1,13 +1,13 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { RouteAnimations } from "./routeAnimations";
+import { RouteAnimations } from "./animations";
 
 @Component({
   selector: "app-root",
   template: `
-  <div class="page" [@routeAnimation]="getDepth(myOutlet)" >
-    <router-outlet #myOutlet="outlet"></router-outlet>
-  </div>
+    <div class="page" [@routeAnimation]="getDepth(myOutlet)">
+      <router-outlet #myOutlet="outlet"></router-outlet>
+    </div>
   `,
   styleUrls: ["./app.component.sass"],
   animations: RouteAnimations

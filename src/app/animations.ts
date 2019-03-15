@@ -8,6 +8,8 @@ import {
   animate
 } from "@angular/animations";
 
+//-----------ROUTE ANIMATIONS------------
+
 let up = [
   query(
     ":enter",
