@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: "home",
     data: { name: CompName.home },
-    loadChildren: "./home/home.module#HomeModule"
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   { path: "**", redirectTo: "home", pathMatch: "full" }
 ];
