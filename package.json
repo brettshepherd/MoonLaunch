@@ -30,11 +30,8 @@
     "@angular/cli": "~8.3.22",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.14",
-    "@types/jasminewd2": "~2.0.3",
     "@types/node": "~13.1.7",
-    "chance": "^1.0.18",
     "codelyzer": "^5.0.1",
-    "cypress": "^3.4.1",
     "ts-node": "~8.6.2",
     "tslint": "~5.20.1",
     "typescript": "^3.5.3"
