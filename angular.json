@@ -43,8 +43,13 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.sass"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.sass"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -92,16 +97,23 @@
             "browserTarget": "angularStarter:build"
           }
         },
-
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "angularStarter"
+  "defaultProject": "angularStarter",
+  "cli": {
+    "analytics": "de618117-dbc1-458a-a28a-21ccb4252efd"
+  }
 }
