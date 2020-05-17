@@ -7,7 +7,7 @@ export interface State {
 }
 
 const state: State = {
-  user: undefined
+  user: undefined,
 };
 
 @Injectable()
@@ -25,6 +25,15 @@ export class Store {
 
   set(name: string, state: any) {
     this.subject.next({ ...this.value, [name]: state });
-    //console.log(this.value);
+  }
+  setMerge(name: string, state: any) {
+    this.subject.next({
+      ...this.value,
+      [name]: { ...this.value[name], ...state },
+    });
+  }
+
+  getDirect<T>(name: string): T {
+    return this.value[name];
   }
 }
