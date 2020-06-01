@@ -1,0 +1,86 @@
+@import ~sass/variables
+
+\:host ::ng-deep 
+  .error 
+    color: #fd415a
+    font-weight: bold
+    margin: 10px 0
+    font-size: 0.75em
+  
+  h1 
+    margin: 0 0 50px
+    font-size: 1.8em
+    font-weight: bold
+    text-align: center
+  
+  button 
+    cursor: pointer
+    outline: 0
+    border: none
+    border-radius: 500px
+    font-size: 1em
+    font-weight: bold
+    &:disabled 
+      opacity: 0.4
+      cursor: not-allowed
+     
+  a 
+    display: block
+    text-align: center
+    color: $dark50
+    font-size: 0.75em
+  .actionBtn
+    background: $accent
+    color: #fff
+    padding: 10px 60px
+
+.auth-form 
+  background: white
+  box-shadow: 0px 29px 28px -19px rgba(0,0,0,.1)
+  border-radius: 10px
+  width: 350px
+  margin: calc(100px + #{10px}) auto 0 auto
+  padding: 50px 50px
+  &__button 
+    text-align: center
+    margin-top: 30px   
+  &__toggleLink 
+    margin: 10px
+  label
+    color: $dark30 
+    position: relative
+    display: block
+    margin-top: 30px 
+    &:after 
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0%
+      height: 2px
+      width: 0px
+      visibility: hidden
+      background-color: $accent
+      transition: .2s ease all
+    &.isFocused   
+      &:after 
+        visibility: visible
+        width: 100%
+  input 
+    outline: none
+    border: none
+    margin: 0
+    padding: 5px 0
+    width: 100%
+    border-bottom: solid 1px $dark20 
+    color: $dark70
+    &:-webkit-autofill
+      -webkit-box-shadow: 0 0 0px 1000px white inset
+      -webkit-text-fill-color: inherit !important
+
+
+
+
+
+
+    
+  

@@ -8,6 +8,7 @@ import { Store } from "./store";
 
 // Firebase
 import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 const config = {
   apiKey: "<your-key>",
@@ -15,7 +16,7 @@ const config = {
   databaseURL: "<your-database-URL>",
   projectId: "<your-project-id>",
   storageBucket: "<your-storage-bucket>",
-  messagingSenderId: "<your-messaging-sender-id>"
+  messagingSenderId: "<your-messaging-sender-id>",
 };
 
 @NgModule({
@@ -26,9 +27,10 @@ const config = {
     // HttpClientModule,
     // HttpClientJsonpModule,
     BrowserAnimationsModule,
-    AngularFireModule.initializeApp(config)
+    AngularFireModule.initializeApp(config),
+    AngularFireAuthModule,
   ],
   providers: [Store],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
