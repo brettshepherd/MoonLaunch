@@ -9,7 +9,7 @@ import { ReactiveFormsModule } from "@angular/forms";
   exports: [AuthFormComponent]
 })
 export class AuthSharedModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<AuthSharedModule> {
     return {
       ngModule: AuthSharedModule,
       providers: []
