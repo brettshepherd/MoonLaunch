@@ -1,0 +1,73 @@
+.container
+    max-width: 140rem
+    margin: 0 auto
+    padding: 3rem
+
+
+.filter-input
+    max-width: 300px
+
+.mat-form-field 
+    font-size: 14px
+    width: 100%
+
+.tableCont
+    position: relative
+    border-radius: 0.5rem
+    overflow: hidden
+
+table 
+    width: 100%
+    font: inherit
+
+.example-loading-shade 
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 56px
+    right: 0
+    z-index: 1
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.standard-row
+    cursor: pointer
+    &:hover 
+        background: lighten(#2f2f35,5)
+    td 
+        border-bottom-width: 0
+        &:first-child
+            text-transform: uppercase
+
+.expanded-standard-row
+    background: lighten(#2f2f35,5)
+    td:first-child
+        color: var(--primary-color)
+
+.expanded-detail-row
+    height: 0
+
+.mat-column-expandedRow
+    background: lighten(#2f2f35,5)
+
+
+.expanded-detail-content
+    overflow: hidden
+    h3
+        font-size: 1.5rem
+        margin-bottom: 1.5rem
+
+.posts-links
+    padding-bottom: 2rem 
+    li 
+        list-style: circle
+        margin-bottom: 1.5rem
+        margin-left: 1.6rem
+        &:last-of-type
+            margin-bottom: 0
+    a
+        display: block
+        color: white
+        opacity: 0.5

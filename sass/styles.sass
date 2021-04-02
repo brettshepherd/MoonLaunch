@@ -1,12 +1,5 @@
-@import ~sass/variables
+@import ~sass/mixins
 
-:root
-    --background-color: #F9F9F9
-    --dark: #333333
-    --dark2: #C7C7C7
-    --border: #F5F5F5
-    --accent: #0085FF
-    
 *
     box-sizing: border-box
     -webkit-box-sizing: border-box
@@ -37,38 +30,23 @@ body
     width: 100%
     margin: 0
     padding: 0
-    font-family: Metropolis, sans-serif
     font-weight: 500
     line-height: 1.5rem
     -webkit-font-smoothing: antialiased   
-    color: var(--dark)
     -webkit-overflow-scrolling: touch
-    overflow: hidden
-    background-color: var(--background-color)
+    overflow: auto
 
 button
     border: none
-    background: none
     cursor: pointer
     font-family: inherit
 
-input
-    border: none
-    border-radius: 0 
-    appearance: none
-    background: none
-    font-family: inherit
-    &:-webkit-autofill 
-        -webkit-transition-delay: 99999s
+// input
+//     border: none
+//     border-radius: 0 
+//     appearance: none
+//     background: none
+//     font-family: inherit
+//     &:-webkit-autofill 
+//         -webkit-transition-delay: 99999s
 
-
-@-webkit-keyframes autofill 
-    to 
-        color: black
-        background: transparent
-
-a 
-    text-decoration: none
-    outline: 0
-    color: inherit
-    
